@@ -1,20 +1,21 @@
+                            //bicycle class 
 public class Bicycle extends Vehicle {
     private boolean hasBell; // Private to Bicycle
 
-    // Constructor
-    public Bicycle(int speed, double fuel, boolean hasBell) {
+                            // Constructor to intialize cycle 
+   public Bicycle(int speed, double fuel, boolean hasBell) {
         super(speed, fuel); // Call Vehicle's constructor
         this.hasBell = hasBell;
     }
 
-    // Override start method
+                                // Override start method 
     @Override
     public void start() {
-        System.out.println("The bicycle has started. Pedal away!");
+        System.out.println("You started Pedaling away!");
     }
 
-    // Ring bell method
-    public void ringBell() {
+                                // method for bicycle class only 
+    public void hasBell() {
         if (hasBell) {
             System.out.println("Ring Ring!");
         } else {
